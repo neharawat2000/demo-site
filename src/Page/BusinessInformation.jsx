@@ -1,15 +1,10 @@
 import React, { useState} from "react";
 import { FiEdit2 } from "react-icons/fi";
-// import Header from "../Component/Header/Header";
-// import SecondHeader from "../Component/Header/SecondHeader";
-// import LabelInputText from "../Component/LabelInputText/LabelInputText";
-// import LabelSelectInput from "../Component/LabelSelectInput/LabelSelectInput";
-// import Slidebar from "../Component/Slidebar/Slidebar";
 import { RxCross1 } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
-export default function Overview(){
+export default function BusinessInformation(){
     const menuu = 
     [
         {
@@ -226,101 +221,7 @@ export default function Overview(){
                             </div>
                         </div>
 
-                        {/* OWNER DETAILS */}
-                        {/* <div className="flex flex-col gap-4">
-                            <div className="flex justify-between">
-                                <h3 
-                                className="text-[#303C56] text-[1.2rem] font-[500]">
-                                    OWNER DETAILS
-                                </h3>
-                                <FiEdit2 />
-                            </div>
-                            <div className="flex flex-col gap-2 justify-between">
-                                <div className="flex justify-content gap-8 w-[100%]">
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">First name</label>
-                                        <input type="text" required placeholder="First name" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Last Name</label>
-                                        <input type="text" required placeholder="Enter Last Name" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                </div>
-                                <div className="flex justify-content gap-8 w-[100%]">
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                    <div className="flex justify-content gap-8 w-[100%]">
-                                        <div className="flex flex-col gap-1 w-[100%]">
-                                            <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Street</label>
-                                            <input type="text" required placeholder="Enter Street" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                        </div>
-                                        <div className="flex flex-col gap-1 w-[100%]">
-                                            <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Street</label>
-                                            <input type="text" required placeholder="Enter Street" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="flex justify-content gap-8 w-[100%]">
-                                        <div className="flex flex-col gap-1 w-[100%]">
-                                            <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">State</label>
-                                            <input type="text" required placeholder="Enter State" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                        </div>
-                                        <div className="flex flex-col gap-1 w-[100%]">
-                                            <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Postal code</label>
-                                            <input type="text" required placeholder="Enter Postal code" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex justify-content gap-8 w-[100%]">
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">SSN</label>
-                                        <input type="text" required placeholder="Enter SSN" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Phone number</label>
-                                        <input type="text" required placeholder="Enter Phone number" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                </div>
-                                <div className="flex justify-content gap-8 w-[100%]">
-                                    <div className="flex flex-col gap-1 w-[48.5%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Date of birth</label>
-                                        <input type="date" required placeholder="Enter Date of birth" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-
-                        {/* iso details */}
-                        {/* <div className="flex flex-col gap-4">
-                            <div className="flex justify-between">
-                                <h3 
-                                className="text-[#303C56] text-[1.2rem] font-[500]">
-                                    ISO DETAILS
-                                </h3>
-                                <FiEdit2 />
-                            </div>
-                            <div className="flex flex-col gap-2 justify-between">
-                                <div className="flex justify-content gap-8 w-[100%]">
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">ISO Name</label>
-                                        <input type="text" required placeholder="ISO Name" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">ISO Sales Rep</label>
-                                        <input type="text" required placeholder="Enter ISO Sales Rep" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                </div>
-                                <div className="flex justify-content gap-8 w-[100%]">
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">Sales Rep</label>
-                                        <input type="text" required placeholder="Enter Sales Rep" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                    <div className="flex flex-col gap-1 w-[100%]">
-                                        <label className="text-[#616c80] text-[0.95rem] font-[500] px-[0.2rem]">ISO Manager</label>
-                                        <input type="text" required placeholder="Enter ISO Manager" className="border  border-[#c8c5fa] h-[2.8rem] w-[100%] rounded-lg shadow-[0px 1px 2px 0px #1018280D] text-[#707070] bg-[rgb(57, 168, 97)] px-[1rem] py-[0.8rem] outline-none text-[1rem]"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                   
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../Style/slidebar/slidebar.css";
-import logo from "../../resources/logo.jpeg"
+import logo from "../../resources/logo.png"
 import { TbLayoutDashboard } from "react-icons/tb";
 import { NavLink} from "react-router-dom";
 
@@ -15,15 +15,19 @@ export default function Slidebar(props){
     
     return(
         <nav>
-            <div className="slidebar-menu">
+            <div className="Navbar">
                 <div>
-                    {/* <img src={logo} alt="logo" className="h-[80px] w-[165px] mt-[1.5rem] mb-[1rem]"/> */}
-                    <div className="flex flex-col font-[800] text-[blue] text-[2.5rem] leading-7 w-[90px]">Fora 
-                        <span className="text-[1rem] font-[500] text-right">financial</span>
+                    <div className="flex flex-col items-left w-auto mt-[1rem] mb-[1rem]">
+                        <div className="h-[auto] w-[auto]">
+                        <img src={logo} alt="logo"/>
+                        </div>
+                        <span className="pl-[3rem] flex gap-2 text-[16px] text-[#616C80] company-logo">
+                            <span>Business Lending.</span>
+                            <span>Simplified.</span>
+                        </span>
                     </div>
-                    {/* <div className="beta">{props.beta}</div> */}
                 </div>
-                <div className="box">
+                {/* <div className="box">
                     <div className="first">
                         {
                             menuLists.map((menuList, index)=>{
@@ -41,7 +45,7 @@ export default function Slidebar(props){
                         }
                     </div>
                     
-                </div>
+                </div> */}
             </div>
         </nav>
     );

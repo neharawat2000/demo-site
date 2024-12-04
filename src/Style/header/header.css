@@ -1,31 +1,23 @@
 /* header */
-.header{
+.header {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    margin-top: 2rem;
     width: 95%;
-    margin-bottom: 26px;
 }
-.header .select_menu{
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 19.5px;
+.header .select_menu {
     color: #353333;
     display: flex;
+    font-size: 19px;
+    font-weight: 600;
     gap: 8px;
-    width:600px;
+    line-height: 19.5px;
     position: relative;
-    margin-bottom: 25px;
+    width: 600px;
 }
-/* .header .select_menu::after{
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    width: 100%;
-    border-bottom: 1px solid #D1D1D1;
-} */
 .header .select_menu span{
-    color: white;
+    color: #15274d;
 }
 .header-second{
     position: relative;
